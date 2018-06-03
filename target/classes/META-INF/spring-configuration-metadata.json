@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.cdk.domain.SwaggerUIDetails",
+      "name": "details",
+      "type": "com.cdk.domain.SwaggerUIDetails"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.cdk.domain.SwaggerUIDetails",
+      "name": "details.description",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.cdk.domain.SwaggerUIDetails",
+      "name": "details.title",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.cdk.domain.SwaggerUIDetails",
+      "name": "details.version",
+      "type": "java.lang.String"
+    }
+  ]
+}
