@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms;
+package com.cdk.standaloneprograms.threadprograms;
 
 // Two threads accessing two methods in parallel
 public class ThreadDemo1 {

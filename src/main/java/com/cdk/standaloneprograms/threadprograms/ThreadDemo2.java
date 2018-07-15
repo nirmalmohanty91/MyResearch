@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms;
+package com.cdk.standaloneprograms.threadprograms;
 
 import java.util.stream.IntStream;
 
@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class ThreadDemo2 extends Thread {
 
     public void run() {
-	IntStream.range(1, 100).forEach(n -> {
+	IntStream.range(1, 6).forEach(n -> {
 
 	    System.out.println(Thread.currentThread().getName() + ": " + n);
 	    try {
