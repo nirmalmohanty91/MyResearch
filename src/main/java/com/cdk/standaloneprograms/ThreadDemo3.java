@@ -2,9 +2,9 @@ package com.cdk.standaloneprograms;
 
 import java.util.stream.IntStream;
 
-//Accessing one method by two threads
-public class ThreadDemo2 extends Thread {
+public class ThreadDemo3 implements Runnable {
 
+    @Override
     public void run() {
 	IntStream.range(1, 6).forEach(n -> {
 
@@ -18,14 +18,15 @@ public class ThreadDemo2 extends Thread {
 	});
     }
 
-    public static void main(String args[]) {
-	ThreadDemo2 t1 = new ThreadDemo2();
-	ThreadDemo2 t2 = new ThreadDemo2();
-	System.out.println("Name of t1:" + t1.getName());
-	System.out.println("Name of t2:" + t2.getName());
-
+    public static void main(String[] args) {
+	System.out.println(Thread.currentThread());
+	Runnable r1 = new ThreadDemo3();
+	Runnable r2 = new ThreadDemo3();
+	Thread t1 = new Thread(r1);
+	Thread t2 = new Thread(r2);
 	t1.start();
 	t2.start();
 
     }
+
 }
