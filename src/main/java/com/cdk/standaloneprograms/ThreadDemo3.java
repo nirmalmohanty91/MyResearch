@@ -2,6 +2,7 @@ package com.cdk.standaloneprograms;
 
 import java.util.stream.IntStream;
 
+//Thread Implementation using Runnable interface
 public class ThreadDemo3 implements Runnable {
 
     @Override
