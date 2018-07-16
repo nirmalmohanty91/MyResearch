@@ -15,3 +15,8 @@ details:
 security:
   basic:
     enabled: false
+filepath:
+  soucefiles:
+    sourcefile1: src/main/resources/Source1.txt
+  targetfiles:
+    targetfile1: src/main/resources/Target1.txt
