@@ -32,7 +32,6 @@ public class Building {
   private String querySpecificationId;
   private String querySpecificationsVin;
 
-
   public static void main(String[] args) {
     Building b = new Building();
     String s = b.toString();
@@ -45,12 +44,10 @@ public class Building {
       finalOP += s4[0] + "(" + s4[0] + ")" + ".";
     }
     System.out.println(finalOP);
-
   }
 
   @Override
   public String toString() {
     return ToStringBuilder.reflectionToString(this);
   }
-
 }
