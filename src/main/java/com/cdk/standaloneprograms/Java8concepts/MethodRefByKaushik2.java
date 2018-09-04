@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 
 public class MethodRefByKaushik2 {
@@ -15,7 +16,7 @@ public class MethodRefByKaushik2 {
             Person.builder().firstName("Scarlet").lastName("Johanson").age(30).build(),
             Person.builder().firstName("Nirmal").lastName("Mohanty").age(27).build(),
             Person.builder().firstName("Bruce").lastName("Wayne").age(30).build(),
-            Person.builder().firstName("Natalie").lastName("Portman").age(30).build());
+            Person.builder().firstName("Natalie").lastName("Portman").age(27).build());
 
     /*Sort list by last name*/
     //    Method-1
@@ -35,5 +36,7 @@ public class MethodRefByKaushik2 {
           if (person.getLastName().startsWith("M"))
             System.out.println(person.getFirstName());
         });
+
+    //Map<List<Person>,String> groupingList=personList.
   }
 }
