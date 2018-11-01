@@ -64,11 +64,11 @@ public class WorkingWithDate {
         System.out.println(date);
 
       DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
-      Date date1 = format.parse(date);
+      //Date date1 = format.parse(date);
 
-        LocalDate localDate = LocalDate.parse(date, formatter1);
+      //LocalDate localDate = LocalDate.parse(date, formatter1);
 
-        System.out.println(localDate);
+      //System.out.println(localDate);
 
     // System.out.println(localDate);
 
