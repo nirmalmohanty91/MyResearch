@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms;
+package com.cdk.standaloneprograms.StringPrograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
