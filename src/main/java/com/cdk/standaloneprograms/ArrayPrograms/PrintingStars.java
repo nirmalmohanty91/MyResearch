@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms;
+package com.cdk.standaloneprograms.ArrayPrograms;
 
 public class PrintingStars {
 
