@@ -18,15 +18,22 @@ public class MethodRefByKaushik2 {
             Person.builder().firstName("Bruce").lastName("Wayne").age(30).build(),
             Person.builder().firstName("Natalie").lastName("Portman").age(27).build());
 
-    /*Sort list by last name*/
-    //    Method-1
-    //    Collections.sort(personList, (p1, p2) ->
-    // p1.getFirstName().compareTo(p2.getFirstName()));
+    // Method-1
+    /*
+    Collections.sort(personList, (p1, p2) -> p1.getFirstName().compareTo(p2.getFirstName()));
+    */
+
     // Method-2
+    /*
     Function<Person,String> getLastName=Person::getLastName;
     Collections.sort(personList, Comparator.comparing(getLastName));
+    */
 
-    Collections.sort(personList, Comparator.comparing(Person::getLastName));
+    //Method-3
+    /*Collections.sort(personList, Comparator.comparing(Person::getLastName));*/
+
+    //Method-4
+    personList.sort(Comparator.comparing(Person::getFirstName));
 
     // personList.forEach(person -> System.out.println(person.getFirstName()));
     personList.forEach(System.out::println);
