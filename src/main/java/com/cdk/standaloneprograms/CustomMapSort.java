@@ -14,7 +14,7 @@ public class CustomMapSort {
 
     System.out.println("Before Sort:");
     printMap(map);
-    
+
     Map<String, Employee> sortedMap = sortByValue(map);
 
     System.out.println("\nAfter Sort by Name:");
