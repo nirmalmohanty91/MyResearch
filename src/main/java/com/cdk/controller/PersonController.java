@@ -13,11 +13,9 @@ import com.cdk.service.PersonInterface;
 @RestController
 public class PersonController {
 
-  @Autowired
-  private SwaggerUIDetails myConfig;
+  @Autowired private SwaggerUIDetails myConfig;
 
-  @Autowired
-  private PersonInterface personService;
+  @Autowired private PersonInterface personService;
 
   @GetMapping(path = "/yml", produces = MediaType.APPLICATION_JSON_VALUE)
   public SwaggerUIDetails printYaml() {
@@ -26,10 +24,8 @@ public class PersonController {
 
   @GetMapping("/list")
   public List<Person> getPersonList() {
-
     return personService.getListOfPeople();
   }
-
 
   @GetMapping("/sortedLastName")
   public List<Person> getLastNameSortedList() {
@@ -40,5 +36,4 @@ public class PersonController {
   public List<Person> lastNameBeginsWithR(@PathVariable("startsWith") String startsWith) {
     return personService.lastNameStartsWith(startsWith);
   }
-
 }
