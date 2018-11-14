@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms.Java8concepts;
+package com.cdk.standaloneprograms.Java8concepts.source2;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -9,7 +9,7 @@ import java.util.Optional;
 // checks and NullPointerException. It avoids any runtime NullPointerExceptions and supports us in
 // developing clean and neat Java APIs or Applications. Like Collections and arrays, it is also a
 // Container to hold at most one value. Let us explore this new construct with some useful examples.
-public class TestingOptions {
+public class OptionalDemo {
   public static void main(String[] args) {
     Optional<String> names = Optional.ofNullable("Nirmal");
     Optional<String> names1 = Optional.of("Nirmal");

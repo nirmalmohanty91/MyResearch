@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms.Java8concepts;
+package com.cdk.standaloneprograms.Java8concepts.source2;
 
 import java.util.ArrayList;
 import java.util.List;

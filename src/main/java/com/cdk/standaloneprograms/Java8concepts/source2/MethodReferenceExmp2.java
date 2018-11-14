@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms.Java8concepts;
+package com.cdk.standaloneprograms.Java8concepts.source2;
 
 import com.cdk.domain.Person;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 
-public class MethodRefByKaushik2 {
+public class MethodReferenceExmp2 {
   public static void main(String[] args) {
     List<Person> personList =
         Arrays.asList(
