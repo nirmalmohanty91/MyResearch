@@ -24,7 +24,7 @@ public class DriverClass {
     ////      }
     ////    }
 
-    String s = "1234";
+    //String s = "1234";
     //    int distinct = 0 ;
     //
     //    for (int i = 0; i < s.length(); i++) {
@@ -43,9 +43,23 @@ public class DriverClass {
     //
     //    }
 
-    char[] c=s.toCharArray();
+    //char[] c=s.toCharArray();
    // List<Character> charList = Arrays.asList(c);
 
-    System.out.println(Integer.parseInt(s));
+    //System.out.println(Integer.parseInt(s));
+
+
+String number = "1";
+    System.out.println(DriverClass.check(number));
+
+
   }
+
+
+
+  public static boolean check(String number){
+return "1".equals(number);
+  }
+
+
 }

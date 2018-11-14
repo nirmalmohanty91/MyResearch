@@ -27,5 +27,9 @@ public class ThreadDemo2 extends Thread {
 
     t1.start();
     t2.start();
+
   }
+
+
+
 }

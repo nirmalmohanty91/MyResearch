@@ -1,4 +1,4 @@
-package com.cdk.standaloneprograms.Java8concepts;
+package com.cdk.standaloneprograms.Java8concepts.source2;
 // Java does type inference with lambdas
 
 public class TypeInferenceExample {
