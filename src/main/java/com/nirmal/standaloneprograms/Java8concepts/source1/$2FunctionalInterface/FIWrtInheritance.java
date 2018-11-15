@@ -12,7 +12,7 @@ public interface FIWrtInheritance {
   public static void m3() {}
 }
 
-// You can't have two public interface/class in one class
+// You can't have two public interface/class in one file
 // This is a valid Functional interface because the abstract method from parent is automatically
 // available to child
 @FunctionalInterface
