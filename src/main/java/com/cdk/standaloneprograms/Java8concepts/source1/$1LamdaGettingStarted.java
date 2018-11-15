@@ -45,8 +45,8 @@ public class $1LamdaGettingStarted {
   /*
       (i) -> { return i*i; }
   */
-  // If only one parameter remove (). since only one line remove {}. if no {} do not use return key
-  // word
+  // If only one parameter remove (). since only one line remove {}. return keyword can only be used inside {}.
+  // if using {} & want to return you have to use return keyword
   /*
        i -> i*i;
   */
