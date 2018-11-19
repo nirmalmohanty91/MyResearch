@@ -1,43 +1,29 @@
 package com.nirmal.standaloneprograms;
 
-import com.nirmal.standaloneprograms.CollectionPrograms.Address;
-import com.nirmal.standaloneprograms.CollectionPrograms.Employee;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import lombok.AllArgsConstructor;
-import org.json.JSONException;
-import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter;
+interface P {
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+  default void printB() {
+    System.out.println("ghkgh");
+  };
+}
 
-public class Test {
+interface Q {
 
-  public static void main(String[] args) throws JSONException, JsonProcessingException {
-    //    MappingJackson2XmlHttpMessageConverter mappingJackson2XmlHttpMessageConverter = new
-    // MappingJackson2XmlHttpMessageConverter();
-    //    Address ad = Address.builder().street("Hyderabad").build();
-    //    Employee e = Employee.builder().id(1).name("nirmal").address(ad).build();
-    //    // ObjectMapper om = new ObjectMapper();
-    //    // JSONObject obj = new JSONObject( new ObjectMapper().writeValueAsString(e));
-    //    //  String xml_data = XML.toString(new JSONObject( new
-    // ObjectMapper().writeValueAsString(e)));
-    //    String xml_data =
-    //        mappingJackson2XmlHttpMessageConverter.getObjectMapper().writeValueAsString(e);
-    //    System.out.println(xml_data);
+  default void printB() {
+    System.out.println("hjl");
+  };
+}
 
-    List<String> list = new ArrayList<>();
+public class Test implements P, Q {
 
-    list.add("3");
-    list.add("5");
+  public static void main(String[] args) {
+    Test t = new Test();
+    t.printB();
+  }
 
-    List<Integer> list1 = list.stream().map(t -> Integer.parseInt(t)).collect(Collectors.toList());
-
-//    List<Integer> list2 = new ArrayList<>();
-//    for (String s : list) {
-//      list2.add(Integer.parseInt(s));
-//    }
-
-    list1.forEach(System.out::println);
+  @Override
+  public void printB() {
+    // System.out.println("Own");
+    Q.super.printB();
   }
 }
