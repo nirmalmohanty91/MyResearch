@@ -19,7 +19,7 @@ public class Java8Flatmap {
 
     Optional<User> stringOptional =
         userList
-            .stream().filter(user -> user.getPhoneNumbers().contains("50")).findAny();
+            .stream().filter(user -> user.getPhoneNumbers().contains("5")).findAny();
             //.map(user -> user.getPhoneNumbers().stream())
             //.flatMap(p -> p.filter(phoneNumber -> phoneNumber.equalsIgnoreCase("50")))
             //.findAny();
